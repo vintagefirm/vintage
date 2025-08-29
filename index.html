@@ -13,6 +13,7 @@
           background-position: 100% 50%;
         }
       }
+
       body {
         margin: 0;
         font-family: sans-serif;
@@ -26,25 +27,37 @@
         text-align: center;
         padding: 4rem 1rem;
       }
+
+      .logo-wrapper {
+        background: white;
+        border-radius: 50%;
+        padding: 1rem;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1.5rem;
+      }
+
       img.logo {
         width: 160px;
         height: auto;
+        display: block;
         border-radius: 50%;
-        margin-bottom: 1.5rem;
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
       }
+
       h1 {
         font-size: 2rem;
         margin-bottom: 0.5rem;
       }
+
       p.subtitle {
         font-size: 1.125rem;
         margin-bottom: 2rem;
       }
+
       h2 {
         font-size: 1.25rem;
         margin: 2rem 0 1rem;
       }
+
       .projects {
         display: grid;
         grid-template-columns: 1fr;
@@ -52,11 +65,13 @@
         max-width: 600px;
         width: 100%;
       }
+
       @media (min-width: 600px) {
         .projects {
           grid-template-columns: 1fr 1fr;
         }
       }
+
       .project-box {
         background: white;
         padding: 1.5rem;
@@ -64,16 +79,19 @@
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
         transition: all 0.3s ease;
       }
+
       .project-box:hover {
         transform: translateY(-4px);
         box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
       }
+
       .project-box img {
         width: 64px;
         height: 64px;
         object-fit: contain;
         margin-bottom: 0.75rem;
       }
+
       .project-box a {
         display: block;
         font-size: 1.125rem;
@@ -82,9 +100,11 @@
         text-decoration: none;
         margin-bottom: 0.25rem;
       }
+
       .project-box a:hover {
         text-decoration: underline;
       }
+
       footer {
         margin-top: 3rem;
         font-size: 0.875rem;
@@ -93,7 +113,10 @@
     </style>
   </head>
   <body>
-    <img src="vintage_FA_Logo_CircleLogo.png" alt="Vintage Marketing Logo" class="logo" />
+    <div class="logo-wrapper">
+      <img src="vintage_FA_Logo_CircleLogo.png" alt="Vintage Marketing Logo" class="logo" />
+    </div>
+
     <p class="subtitle">A marketing and digital product development company.</p>
 
     <h2>Our Projects</h2>
@@ -117,4 +140,5 @@
     </footer>
   </body>
 </html>
+
 
