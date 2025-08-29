@@ -3,54 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vintage | A marketing and brand development company</title>
+    <title>Vintage Marketing | we make products and brands</title>
     <style>
+      @keyframes gradient-x {
+        0%, 100% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+      }
       body {
         margin: 0;
         font-family: sans-serif;
-        background: #fff;
+        background: linear-gradient(to right, #fdf6e3, #d1e9e9, #fdf6e3);
+        background-size: 200% 200%;
+        animation: gradient-x 10s ease infinite;
         color: #111;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        min-height: 100vh;
         text-align: center;
+        padding: 4rem 1rem;
       }
       img.logo {
-        width: 120px;
-        margin-bottom: 1rem;
+        width: 160px;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+      p.subtitle {
+        font-size: 1.125rem;
+        margin-bottom: 2rem;
+      }
+      h2 {
+        font-size: 1.25rem;
+        margin: 2rem 0 1rem;
       }
       .projects {
-        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        max-width: 600px;
+        width: 100%;
       }
-      .projects div {
-        margin-bottom: 1rem;
+      @media (min-width: 600px) {
+        .projects {
+          grid-template-columns: 1fr 1fr;
+        }
       }
-      a {
+      .project-box {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+      }
+      .project-box:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+      }
+      .project-box img {
+        width: 64px;
+        height: 64px;
+        object-fit: contain;
+        margin-bottom: 0.75rem;
+      }
+      .project-box a {
+        display: block;
+        font-size: 1.125rem;
+        font-weight: 600;
         color: #0070f3;
         text-decoration: none;
+        margin-bottom: 0.25rem;
+      }
+      .project-box a:hover {
+        text-decoration: underline;
       }
       footer {
         margin-top: 3rem;
         font-size: 0.875rem;
-        color: #888;
+        color: #666;
       }
     </style>
   </head>
   <body>
-    <img src="vintage-logo.png" alt="Vintage Marketing Logo" class="logo" />
-    <h1>Vintage Marketing</h1>
-    <p>A marketing and digital product development company.</p>
+    <img src="vintage_FA_Logo_CircleLogo.png" alt="Vintage Marketing Logo" class="logo" />
+    <p class="subtitle">A marketing and digital product development company.</p>
 
+    <h2>Our Projects</h2>
     <div class="projects">
-      <div>
-        <strong>Good Laundry</strong><br />
-        <a href="https://goodlaundry.com" target="_blank">Eco-Friendly Home Products</a>
+      <div class="project-box">
+        <img src="Group 28401580.png" alt="Good Laundry Logo" />
+        <a href="https://goodlaundry.com" target="_blank" rel="noopener noreferrer">Good Laundry</a>
+        <p>Eco-Friendly Home Products</p>
       </div>
-      <div>
-        <strong>Sexy Health</strong><br />
-        Healthcare (In Progress)
+
+      <div class="project-box">
+        <img src="sexyhealthlogo.png" alt="Sexy Health Logo" />
+        <p><strong>Sexy Health</strong></p>
+        <p>Healthcare (In Progress)</p>
       </div>
     </div>
 
@@ -60,3 +117,4 @@
     </footer>
   </body>
 </html>
+
